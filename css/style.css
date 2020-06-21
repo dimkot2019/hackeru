@@ -455,7 +455,7 @@ a {
     border: 1px solid greenyellow;
 }
 
-.middle1__center_lab1 {
+.middle1__center_label1 {
     background-image: url("/images/lable1.png");
     background-size: cover;
     width: 96px;
@@ -464,7 +464,7 @@ a {
     border: 1px solid chocolate;
 }
 
-.middle1__center_lab2 {
+.middle1__center_label2 {
     background-image: url("/images/lable2.png");
     background-size: cover;
     width: 96px;
@@ -473,7 +473,7 @@ a {
     border: 1px solid chocolate;
 }
 
-.middle1__center_lab3 {
+.middle1__center_label3 {
     background-image: url("/images/lable3.png");
     background-size: cover;
     width: 96px;
@@ -482,7 +482,7 @@ a {
     border: 1px solid chocolate;
 }
 
-.middle1__center_lab4 {
+.middle1__center_label4 {
     background-image: url("/images/lable4.png");
     background-size: cover;
     width: 96px;
@@ -491,7 +491,7 @@ a {
     border: 1px solid chocolate;
 }
 
-.middle1__center_lab5 {
+.middle1__center_label5 {
     background-image: url("/images/lable5.png");
     background-size: cover;
     width: 96px;
@@ -500,7 +500,7 @@ a {
     border: 1px solid chocolate;
 }
 
-.middle1__center_lab6 {
+.middle1__center_label6 {
     background-image: url("/images/lable6.png");
     background-size: cover;
     width: 96px;
@@ -509,7 +509,7 @@ a {
     border: 1px solid chocolate;
 }
 
-.middle1__center_lab7 {
+.middle1__center_label7 {
     background-image: url("/images/lable7.png");
     background-size: cover;
     width: 96px;
@@ -518,7 +518,7 @@ a {
     border: 1px solid chocolate;
 }
 
-.middle1__center_lab8 {
+.middle1__center_label8 {
     background-image: url("/images/lable8.png");
     background-size: cover;
     width: 96px;
@@ -527,7 +527,7 @@ a {
     border: 1px solid chocolate;
 }
 
-.middle1__center_lab9 {
+.middle1__center_label9 {
     background-image: url("/images/lable9.png");
     background-size: cover;
     width: 96px;
@@ -536,7 +536,7 @@ a {
     border: 1px solid chocolate;
 }
 
-.middle1__center_lab10 {
+.middle1__center_label10 {
     background-image: url("/images/lable10.png");
     background-size: cover;
     width: 96px;
@@ -727,12 +727,6 @@ a {
     width: 90px;
     flex-grow: 1;
     border: 1px solid chocolate;
-}
-
-.nav4__s {
-    width: 918px;
-    flex-grow: 1;
-    border: 1px solid chocolate
 }
 
 .map2__buffer2 {
@@ -992,17 +986,68 @@ a {
     border: 1px solid darkmagenta;
 }
 
+.footer__top_card {
+    width: 265px;
+    height: 100%;
+    flex-grow: 0;
+    border: 1px solid chocolate;
+}
+
+.footer__top_buffer {
+    flex-grow: 1;
+    border: 1px solid darkcyan;
+}
+
+.footer__top_network {
+    width: 350px;
+    /*flex-grow: 0;*/
+    border: 1px solid chocolate;
+    position: relative;
+}
+
+.network-ball1 {
+    margin-top: 20px;
+    position: absolute;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color:  white;
+}
+
+.network-ball2 {
+    margin-left: 60px;
+    margin-top: 20px;
+    position: absolute;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color:  white;
+}
+
+.network-ball3 {
+    margin-left: 120px;
+    margin-top: 20px;
+    position: absolute;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color:  white;
+}
+
+.network-ball4 {
+    margin-left: 180px;
+    margin-top: 20px;
+    position: absolute;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color:  white;
+}
+
 .footer__medium {
     display: flex;
     width: 100%;
     height: 234px;
-    border: 1px solid darkmagenta;
-}
-
-.footer__bottom {
-    display: flex;
-    width: 100%;
-    height: 112px;
     border: 1px solid darkmagenta;
 }
 
@@ -1013,7 +1058,8 @@ a {
 }
 
 .about {
-    width: 254px;
+    margin-left: 82px;
+    width: 172px;
     border: 1px solid chocolate;
 }
 
@@ -1038,6 +1084,16 @@ a {
     border: 1px solid chocolate;
 }
 
+.how span {
+    font-weight: bold;
+    color:  #ff7112;
+}
+
+.how a span{
+    text-decoration: none;
+    color: white;
+}
+
 .footer__medium_get {
     width: 178px;
     flex-grow: 0;
@@ -1047,6 +1103,16 @@ a {
 .get {
     width: 178px;
     border: 1px solid chocolate;
+}
+
+.get span {
+    font-weight: bold;
+    color:  #ff7112;
+}
+
+.get a span{
+    text-decoration: none;
+    color: white;
 }
 
 .footer__medium_stay {
@@ -1060,6 +1126,16 @@ a {
     border: 1px solid chocolate;
 }
 
+.stay span {
+    font-weight: bold;
+    color:  #ff7112;
+}
+
+.stay a span{
+    text-decoration: none;
+    color: white;
+}
+
 .footer__medium_email {
     width: 480px;
     flex-grow: 0;
@@ -1068,5 +1144,107 @@ a {
 
 .email {
     width: 480px;
+    vertical-align: middle;
+    white-space: nowrap;
+    position: relative;
     border: 1px solid chocolate;
+}
+
+.email p{
+    color: white;
+}
+
+.email  input#email{
+    width: 344px;
+    height: 60px;
+    background-color: #27312a;
+    border: 1px solid white;
+    font-size: 20pt;
+    margin-left: 15px;
+    color: white;
+    padding-left: 45px;
+}
+
+.email .icon{
+    position: absolute;
+    top: 50%;
+    margin-left: -40px;
+    margin-top: 25px;
+    z-index: 1;
+    color: #afafaf;
+}
+  
+.footer__bottom {
+    display: flex;
+    width: 100%;
+    height: 112px;
+    border: 1px solid darkmagenta;
+}
+
+.footer__bottom_left {
+    width: 466px;
+    flex-grow: 0;
+    border: 1px solid chocolate; 
+}
+
+.rights {
+    width: 372px;
+    margin-left: 82px;
+    margin-top: 48px;
+    position: relative;
+}
+
+.rights p{
+    color: #969696;
+}
+
+.footer-ball {
+    position: absolute;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    top: 5px;
+    left: 12px;
+    border: 1px solid  #969696;
+    
+}
+
+.footer__bottom_buffer {
+    width: 366px;
+    flex-grow: 1;
+    border: 1px solid chocolate; 
+}
+
+.footer__bottom_right {
+    width: 448px;
+    flex-grow: 0;
+    border: 1px solid chocolate; 
+}
+
+.labels {
+    width: 320px;
+    height: 54px;
+    margin-left: 50px;
+    margin-top: 30px;
+    position: relative;
+}
+
+.labels__1 {
+    width: 132px;
+    height: 38px;
+    margin-left: 10px;
+    margin-top: 5px;
+    border: 1px solid white;
+    border-radius: 5px;
+    position: absolute;
+}
+
+.labels__2 {
+    width: 132px;
+    height: 38px;
+    margin-left: 172px;
+    margin-top: 5px;
+    border: 1px solid white;
+    border-radius: 5px;
+    position: absolute
 }
