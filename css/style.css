@@ -37,6 +37,147 @@ body {
     background-size: cover;
 }
 
+.header.active { 
+    width: 100%;
+    background:  #27312a;
+    color: white; 
+    height: 734px;
+    user-select: none; 
+}
+
+.header2 {
+    display: none;
+    width: 100%;
+    height: 636px;
+    border: 1px solid greenyellow;  
+}
+
+.header2.active {
+    display: flex;
+}
+
+.header2__left {
+    width: 320px;
+    flex-grow: 0;
+    border: 1px solid chocolate;
+}
+
+.header2__right {
+    width: 960px;
+    flex-grow: 0;
+    border: 1px solid chocolate;  
+}
+
+.header2__right_top {
+    display: flex;
+    width: 100%;
+    height: 236px;
+    border: 1px solid chocolate;
+}
+
+.header2__right_top-about2 {
+    width: 254px;
+    flex-grow: 0;
+    border: 1px solid chocolate; 
+}
+
+.about2 {
+    margin-left: 82px;
+    width: 172px;
+    border: 1px solid chocolate;
+}
+
+.about2 span {
+    font-weight: bold;
+    color:  #ff7112;
+}
+
+.about2 a span{
+    text-decoration: none;
+    color: white;
+}
+
+.header2__right_top-how2 {
+    width: 176px;
+    flex-grow: 0;
+    border: 1px solid chocolate;
+}
+
+.how2 {
+    width: 176px;
+    border: 1px solid chocolate;
+}
+
+.how2 span {
+    font-weight: bold;
+    color:  #ff7112;
+}
+
+.how2 a span{
+    text-decoration: none;
+    color: white;
+}
+
+.header2__right_top-get2 {
+    width: 178px;
+    flex-grow: 0;
+    border: 1px solid chocolate;
+}
+
+.get2 {
+    width: 178px;
+    border: 1px solid chocolate;
+}
+
+.get2 span {
+    font-weight: bold;
+    color:  #ff7112;
+}
+
+.get2 a span{
+    text-decoration: none;
+    color: white;
+}
+
+.header2__right_top-stay2 {
+    width: 182px;
+    flex-grow: 0;
+    border: 1px solid chocolate;
+}
+
+.stay2 {
+    width: 182px;
+    border: 1px solid chocolate;
+}
+
+.stay2 span {
+    font-weight: bold;
+    color:  #ff7112;
+}
+
+.stay2 a span{
+    text-decoration: none;
+    color: white;
+}
+
+.header2__right_medium {
+    display: flex;
+    width: 100%;
+    height: 168px;
+    border: 1px solid chocolate;
+}
+
+.header2__right_bottom {
+    display: flex;
+    width: 100%;
+    height: 556px;
+    border: 1px solid chocolate;
+}
+
+.navigation1.active, .navigation2.active, .navigation3.active, .navigation4.active, .navigation5.active, .middle1__top.active {
+    display: none;
+}
+
 .navigation {
     display: flex;
     width: 100%;
@@ -137,13 +278,13 @@ a {
   height: 100%;
 }
 
-.menu-link, .menu-opener, .menu-opener:hover, .menu-opener.active, .menu-opener-inner, .menu-opener-inner::before, .menu-opener-inner::after, .menu, .menu.active {
-  transition-duration: 1250ms;
+.menu-link, .burger-opener, .burger-opener:hover, .burger-opener.active, .burger-opener-inner, .burger-opener-inner::before, .burger-opener-inner::after, .menu, .menu.active {
+  transition-duration: 125ms;
   transition-property:  all;
   transition-timing-function: ease-out;
 }
 
-.menu-opener {
+.burger-opener {
   cursor: pointer;
   width: 64px;
   height: 64px;
@@ -151,14 +292,11 @@ a {
   top: 2%;
   right: 10%;
   user-select: none;
-}
-
-.menu-opener:hover, .menu-opener.active {
-  /*background: #f1c40f;*/
+  z-index: 10;
 }
 
 /* делает ср. белую полос. бургера*/
-.menu-opener-inner {
+.burger-opener-inner {
   background: #fff;
   height: .2rem;
   width: 1.2rem;
@@ -167,7 +305,7 @@ a {
 }
 
 /* делает верх. и ниж. белую полос. бургера*/
-.menu-opener-inner::before {
+.burger-opener-inner::before {
   background: white;
   content: '';
   display: block;
@@ -175,7 +313,7 @@ a {
   width: 1.2rem;
 }
 
-.menu-opener-inner::after {
+.burger-opener-inner::after {
     background: white;
     content: '';
     display: block;
@@ -183,42 +321,36 @@ a {
     width: 1.2rem;
   }
 
-.menu-opener-inner::before {
+.burger-opener-inner::before {
   transform: translateY(-0.5rem);
 }
 
-.menu-opener-inner::after {
+.burger-opener-inner::after {
   transform: translateY(0.25rem);
 }
 
-.menu-opener-inner.active {
+.burger-opener-inner.active {
   background: transparent;
 }
 
 /* анимация из трех полос. крест*/
-.menu-opener-inner.active::before {
+.burger-opener-inner.active::before {
   transform: translateY(-0.2rem) rotate(-45deg);
 }
 
-.menu-opener-inner.active::after {
+.burger-opener-inner.active::after {
   transform: translateY(-0.4rem) translateX(0rem) rotate(45deg);
 }
 
 .menu {
-  background:  #f1c40f;
-  color: violet;/*transparent;*/
-  height: 64px;
-  position: absolute;
-  top: 2%;
-  right: 10%;
+  background-color:  #27312a;
+  color: white; 
+  height: 734px;
+  
   user-select: none;
   width: 0rem;
-  z-index: -1
 }
 
-.menu.active {
-  width: 98vw;
-}
 
 .menu.active .menu-link {
   color: white;
@@ -226,11 +358,10 @@ a {
 
 .menu-inner {
   display: flex;
-  flex-direction: row-reverse;
   height: 100%;
   list-style-type: none;
   margin: 0;
-  margin-right: 4rem;
+  margin-right: 0rem;
   padding: 0;
 }
 
@@ -249,28 +380,15 @@ a {
   margin: auto;
 }
 
-@media screen and (max-width: 768px) {
-  .menu {
-    height: auto;
-  }
-
-  .menu-inner {
-    display: block;
-  }
-
-  .menu-link {
-    padding: 10px 0;
-    font-size: 1.2em;
-  }
-
-  .menu.active {
-    width: calc(100% - 0.5rem);
-  }
+hr {
+    display: none;
+    margin-left: 62px;
+    margin-right: 62px;
+    border: 1px solid #5e5e5e;
 }
 
-.menu-link li:hover {
-  background-color: #fff;
-	color: #f1c40f;
+hr.active {
+    display: block;
 }
 
 .navigation1 {
@@ -284,17 +402,19 @@ a {
     width: 100%;
     height: 160px;
 }
+/*.navigation2.active {
+    display: none;
+    
+}*/
 
 .navigation2__buffer1 {
     width: 290px;
     flex-grow: 1;
-    border: 1px solid chocolate;
 }
 
 .navigation2__center1 {
     width: 545px;
     flex-grow: 0;
-    border: 1px solid chocolate;
 }
 
 .navigation2__center1_text {
@@ -313,7 +433,6 @@ a {
 .navigation2__center2 {
     width: 160px;
     flex-grow: 0;
-    border: 1px solid chocolate;
 }
 
 .navigation2__center2_text {
@@ -338,7 +457,6 @@ a {
 .navigation2__buffer2 {
     width: 290px;
     flex-grow: 1;
-    border: 1px solid darkcyan;
 }
 
 .navigation3 {

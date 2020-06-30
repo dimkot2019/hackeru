@@ -26,38 +26,63 @@
                         </div>
                     </div>
                     <div class="navigation__burger">
-                        <nav class="menu-opener">
-                            <div class="menu-opener-inner"></div>
-                          </nav>
-                          <nav class="menu">
-                            <ul class="menu-inner">
-                              <a href="#" class="menu-link">
-                                <li>Я</li>
-                              </a>
-                              <a href="#" class="menu-link">
-                                <li>Портфолио</li>
-                              </a>
-                              <a href="#" class="menu-link">
-                                <li>Увлечения</li>
-                              </a>
-                              <a href="#" class="menu-link">
-                                <li>Друзья</li>
-                              </a>
-                              <a href="#" class="menu-link">
-                                <li>Контакты</li>
-                              </a>
-                              <a href="#" class="menu-link">
-                                <li>Контакты</li>
-                              </a>
-                              <a href="#" class="menu-link">
-                                <li>Контакты</li>
-                              </a>
-                              <a href="#" class="menu-link">
-                                <li>Контакты</li>
-                              </a>
-                            </ul>
-                          </nav>
-                    </div>
+                        <nav class="burger-opener">
+                            <div class="burger-opener-inner"></div>
+                        </nav>
+                    </div>  
+                </div>
+                <hr>
+                <div class="header2">
+                   <div class="header2__left">
+
+                   </div>
+                   <div class="header2__right">
+                       <div class="header2__right_top">
+                           <div class="header2__right_top-about2">
+                            <div class="about2">
+                                <span>ABOUT US</span>
+                                <a href="/"><span>Our company</span></a>
+                                <a href="/"><span>Customer testimonials</span></a>
+                                <a href="/"><span>Why we're different</span></a>
+                                <a href="/"><span>Our chosen charity</span></a>
+                                <a href="/"><span>Work for us</span></a>
+                            </div>
+                           </div>
+                           <div class="header2__right_top-how2">
+                            <div class="how2">
+                                <span>HOW CAN WE HELP?</span>
+                                <a href="/"><span>Contact us</span></a>
+                                <a href="/"><span>FAQs</span></a>
+                                <a href="/"><span>Restaurant</span></a>
+                                <a href="/"><span>Opportunities</span></a>
+                                <a href="/"><span>For Businesses</span></a>
+                                <a href="/"><span>Sitemap</span></a>
+                            </div>
+                           </div>
+                           <div class="header2__right_top-get2">
+                            <div class="get2">
+                                <span>GET STARTED</span>
+                                <a href="/"><span>How To Use</span></a>
+                                <a href="/"><span>Buy An AppetitCard</span></a>
+                                <a href="/"><span>Buy An AppetitCard Gift</span></a>
+                                <a href="/"><span>UNIDAYS</span></a>
+                            </div>
+                           </div>
+                           <div class="header2__right_top-stay2">
+                            <div class="stay2">
+                                <span>STAY INVOLED</span>
+                                <a href="/"><span>Newsletter Sign Ap</span></a>
+                                <a href="/"><span>Appetit blog</span></a>
+                                <a href="/"><span>Recommend</span></a>
+                                <a href="/"><span>Restaurants</span></a>
+                                <a href="/"><span>Restaurant Reviews</span></a>
+                                <a href="/"><span>AppetitCard+Offers</span></a>
+                            </div>
+                           </div>
+                       </div>
+                       <div class="header2__right_medium"></div>
+                       <div class="header2__right_bottom"></div>
+                   </div>
                 </div>
                 <div class="navigation1"></div>
                 <div class="navigation2">
@@ -371,17 +396,33 @@
         const toggle = () => {
             var activeClass = 'active';
     
-        if (document.querySelector(".menu-opener").classList.contains(activeClass)) {
-            document.querySelector(".menu-opener-inner").classList.remove(activeClass);
-            document.querySelector(".menu-opener").classList.remove(activeClass);
-            document.querySelector(".menu").classList.remove(activeClass);
+        if (document.querySelector(".burger-opener").classList.contains(activeClass)) {
+            document.querySelector(".burger-opener-inner").classList.remove(activeClass);
+            document.querySelector(".burger-opener").classList.remove(activeClass);
+            document.querySelector(".header").classList.remove(activeClass);
+            document.querySelector(".navigation1").classList.remove(activeClass);
+            document.querySelector(".navigation2").classList.remove(activeClass);
+            document.querySelector(".navigation3").classList.remove(activeClass);
+            document.querySelector(".navigation4").classList.remove(activeClass);
+            document.querySelector(".navigation5").classList.remove(activeClass);
+            document.querySelector(".middle1__top").classList.remove(activeClass);
+            document.querySelector("hr").classList.remove(activeClass);
+            document.querySelector(".header2").classList.remove(activeClass);
         } else {
-            document.querySelector(".menu-opener-inner").classList.add(activeClass);
-            document.querySelector(".menu-opener").classList.add(activeClass);
-            document.querySelector(".menu").classList.add(activeClass);
+            document.querySelector(".burger-opener-inner").classList.add(activeClass);
+            document.querySelector(".burger-opener").classList.add(activeClass);
+            document.querySelector(".header").classList.add(activeClass);
+            document.querySelector(".navigation1").classList.add(activeClass);
+            document.querySelector(".navigation2").classList.add(activeClass);
+            document.querySelector(".navigation3").classList.add(activeClass);
+            document.querySelector(".navigation4").classList.add(activeClass);
+            document.querySelector(".navigation5").classList.add(activeClass);
+            document.querySelector(".middle1__top").classList.add(activeClass);
+            document.querySelector("hr").classList.add(activeClass);
+            document.querySelector(".header2").classList.add(activeClass);
         }//*/
     }
-        document.querySelector('.menu-opener').onclick = toggle;
+        document.querySelector('.burger-opener').onclick = toggle;
     
         // $(".menu-opener, .menu-opener-inner, .menu").toggleClass("active");
     </script>
